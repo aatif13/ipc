@@ -1,14 +1,9 @@
-const BASE =
-  import.meta.env.VITE_API_URL || "http://127.0.0.1:8000";
+const BASE = "https://ipc-clv1.onrender.com";
 
-async function fetchJSON<T>(
-  url: string,
-  init?: RequestInit
-): Promise<T> {
+async function fetchJSON<T>(url: string, init?: RequestInit): Promise<T> {
   const res = await fetch(`${BASE}${url}`, {
     headers: {
       "Content-Type": "application/json",
-      ...init?.headers,
     },
     ...init,
   });
@@ -18,9 +13,7 @@ async function fetchJSON<T>(
       .json()
       .catch(() => ({ detail: res.statusText }));
 
-    throw new Error(
-      err.detail || `HTTP ${res.status}`
-    );
+    throw new Error(err.detail || `HTTP ${res.status}`);
   }
 
   return res.json();

@@ -1,0 +1,8 @@
+INFO:     127.0.0.1:54875 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59915 - "POST /api/benchmark HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63601 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52861 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63252 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56290 - "POST /api/benchmark HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57467 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57468 - "GET /api/health HTTP/1.1" 200 OK
